@@ -3,6 +3,8 @@
     <Header
       :numCorrect="numCorrect"
       :numTotal="numTotal"
+      :v-if="questions.length"
+      :category="questions[index]"
     />
 
     <b-container class="bv-example-row">
@@ -68,7 +70,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
   margin-top: 60px;
 }
 </style>
